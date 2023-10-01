@@ -379,7 +379,7 @@
     }
     /*footer section*/
 
-    .global-footer{
+    .global-footer{display: flex;
         background-color:var(--title-footer-background-color);
         font-family: var(--text2-font-family);
         font-weight: 400;
@@ -403,6 +403,7 @@
         line-height: 1.399em;
         letter-spacing: 0.03em; 
         padding-top: 20px;
+        width: 231px;
     }
     .global-footer p {
         font-family:var(--text2-font-family);
@@ -412,3 +413,40 @@
         line-height: 1.41em;
         letter-spacing: 0.03em;
     }
+    .find-us-on-container{
+        display:block;
+        width: 206px;
+        height: 80px;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .find-us-on-container h3 {
+        font-family: var(--text2-font-family);
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--background-color-white);
+        padding-bottom: 20px;
+    }
+    .social-media {display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 206px;
+                height: 44px;
+                gap: 10px;
+    }
+
+    .social-media-icon {display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color: #FFFFFF1A;
+        width: 44px;
+        height: 44pxa;
+        border-radius: 50%;
+
+    }
+    .social-media-icon:hover{
+        background-color: var(--text-hover-focus-color);
+        fill: var(--background-color-white);
+        border-radius: 50%;
+    } 
