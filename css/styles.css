@@ -150,6 +150,17 @@
     }
     .nav-contact :hover {color: var(--text-hover-focus-color);}
     .nav-contact :focus {color: var(--text-hover-focus-color);}
+    
+    .nav-contact-email {
+        display: flex;
+        align-items:center;
+        gap: 10px;
+    }
+    .nav-contact-phone {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
     /*strong-points*/
 
@@ -257,20 +268,65 @@
         line-height: 1.361em;
     }
 
+    .social-media-icon-team {display: flex;
+        justify-content: center;
+        width: 206px;
+        height: 44px;
+        gap:10px;
+    }
+    
+    .social-media-icon-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color-white);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-media-icon-card :hover {
+        background-color: var(--text-hover-focus-color);
+            fill: var(--background-color-white);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+
+    }
     /*regular-customers*/
 
     .regular-customers {
         padding: 94px;
     }
+
     .regular-customers h2 {
         display: flex;
         justify-content: center;
+        padding-bottom: 50px;
     }
 
-    .customers-logo {
+    .customers {
         display: flex;
+        justify-content: center;
+        gap: 30px;
     }
 
+    .customers-logo {display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+    }
+        .customers-logo :hover {
+            stroke: #2196F3;
+            border:1px solid #2196F3;
+            border-radius: 4px;
+            width: 170px;
+            height: 92px;
+        }
+    
     /*buttons*/
 
    .title-section .button {
@@ -383,8 +439,8 @@
         background-color:var(--title-footer-background-color);
         font-family: var(--text2-font-family);
         font-weight: 400;
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .footer {display:block;
         margin-left: 215px;
@@ -402,7 +458,7 @@
         color: var(--background-color-white); 
         line-height: 1.399em;
         letter-spacing: 0.03em; 
-        padding-top: 20px;
+        padding-top: 28px;
         width: 231px;
     }
     .global-footer p {
@@ -412,13 +468,14 @@
         color: var(--address-color);
         line-height: 1.41em;
         letter-spacing: 0.03em;
+        padding-top: 12px;
     }
+
     .find-us-on-container{
         display:block;
         width: 206px;
-        height: 80px;
         margin-left: 70px;
-        margin-top: 20px;
+        padding-top:15px;
     }
     .find-us-on-container h3 {
         font-family: var(--text2-font-family);
@@ -441,9 +498,8 @@
         align-items: center;
         background-color: #FFFFFF1A;
         width: 44px;
-        height: 44pxa;
+        height: 44px;
         border-radius: 50%;
-
     }
     .social-media-icon:hover{
         background-color: var(--text-hover-focus-color);
