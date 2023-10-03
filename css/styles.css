@@ -310,7 +310,6 @@ h2 {
 .our-team {
     background-color: var(--button-background-color);
     padding-top: 94px;
-
 }
 
 .our-team h2 {
@@ -369,9 +368,8 @@ h2 {
 
 .social-media-icon-team {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 270px;
     height: 44px;
     gap: 10px;
 }
@@ -380,41 +378,19 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color-white);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-}
-
-.social-media-icon-card svg :hover {
-    fill: var(--background-color-white);
-    width: 20px;
-    height: 20px;
-}
-
-.social-media-icon-card :hover {
+    background-color:var(--background-color-white);
     width: 44px;
     height: 44px;
     border-radius: 50%;
+}
+
+.social-media-icon-card svg {fill: #AFB1B8;}
+
+.social-media-icon-card:hover {
     background-color: var(--text-hover-focus-color);
-}
-
-/*social-media-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF1A;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
 }
-
-.social-media-icon:hover {
-    background-color: var(--text-hover-focus-color);
-    fill: var(--background-color-white);
-    border-radius: 50%;
-}*/
-/*regular-customers*/
+.social-media-icon-card:hover svg {fill: var(--background-color-white);}
 
 .regular-customers {
     padding: 94px;
@@ -449,6 +425,8 @@ h2 {
     width: 170px;
     height: 92px;
 }
+
+.customers-logo:hover svg {fill: var(--text-hover-focus-color);}
 
 /*buttons*/
 
@@ -517,7 +495,7 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    width: 75%;
+    width: 65%;
 }
 
 .card-section {
@@ -539,16 +517,17 @@ h2 {
     cursor: pointer;
 }
 
-
 .item-section:hover li {box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.6), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .item-footer {
     display: flex;
     flex-direction: column;
-    margin-inline: 20px;
-    margin-block: 15px;
+justify-content: space-evenly;
+height: 110px;
+margin-left: 24px;
 }
+
 
 .card-section {
     background-color: var(--background-color-white);
@@ -573,8 +552,6 @@ h2 {
     letter-spacing: 0.03em;
 }
 
-
-
 /*footer section*/
 
 .global-footer {
@@ -586,9 +563,8 @@ h2 {
     padding-bottom: 60px;
 }
 
-.footer {
-    display: block;
-    margin-left: 215px;
+.footer{
+    margin-left: 12%;
 }
 
 .global-footer a :hover,
